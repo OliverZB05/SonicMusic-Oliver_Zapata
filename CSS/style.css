@@ -1,0 +1,1608 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "fuenteP";
+  src: url("../Fuentes/Kanit-Bold.ttf"); }
+
+@font-face {
+  font-family: "fuenteMarshmello";
+  src: url("../Fuentes/PoetsenOne.ttf"); }
+
+@font-face {
+  font-family: "fuenteLink";
+  src: url("../Fuentes/Cocogoose.ttf"); }
+
+/* Colores */
+/* Colores */
+/* Posiciones */
+/* Posiciones */
+/* Inicio del reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Final del reset */
+/* ✅ Inicio de grid-container ✅  */
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: " header header header"
+ " menú menú menú"
+ " main main main"
+ " footer footer footer";
+  grid-template-rows: 90px 50px 559px 90px;
+  grid-template-columns: 200px; }
+  .grid-container header {
+    grid-area: header;
+    background-image: url("../Imagenes/HeaderSonicMusic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .grid-container .menú {
+    grid-area: menú;
+    background-color: #272626;
+    /* Inicio elementos de menú */
+    /* Final elementos de menú */ }
+    .grid-container .menú .Enlaces {
+      display: flex;
+      justify-content: space-evenly; }
+    .grid-container .menú .ElementLi {
+      display: inline;
+      padding: 15px; }
+    .grid-container .menú .Link {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      position: relative;
+      bottom: 1px;
+      font-family: "fuenteLink"; }
+    .grid-container .menú .Link:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: #0eff06;
+      /*animacion de derecha a izquierda*/
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out; }
+    .grid-container .menú .Link:hover:after {
+      /*animacion de izquierda a derecha*/
+      transform-origin: left;
+      transform: scaleX(1); }
+  .grid-container .main {
+    grid-area: main; }
+  .grid-container footer {
+    grid-area: footer;
+    background-image: url("../Imagenes/FooterSonicMusic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+/* ✅ Final de grid-container ✅  */
+/* ⭕Inicio de Main PC⭕  */
+@media screen and (min-width: 1200px) {
+  .main {
+    display: grid;
+    grid-template-areas: " FilaSup" 
+ " Fila1"
+ " nada"
+  " FilaSup2" 
+ " Fila2"
+ " nada2"
+  " FilaSup3" 
+ " Fila3"
+ " nada3"
+  " Fila4"
+ " Fila5";
+    grid-template-rows: 40px 200px 20px 40px 200px 20px 40px 200px 20px 300px 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* -------🔵Fila1🔵------- */
+    /* -------🔵Fila1🔵------- */
+    /* -------🔵Fila2🔵------- */
+    /* -------🔵Fila2🔵------- */
+    /* -------🔵Fila3🔵------- */
+    /* -------🔵Fila3🔵------- */
+    /* -------🔵Fila4🔵------- */
+    /* -------🔵Fila4🔵------- */
+    /* -------🔵Fila5🔵------- */
+    /* -------🔵Fila5🔵------- */ }
+    .main .FilaSup {
+      grid-area: FilaSup;
+      background-color: #858585; }
+      .main .FilaSup .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila1 {
+      grid-area: Fila1;
+      background-color: #858585;
+      display: grid;
+      grid-template-areas: " Cuadro Cuadro2 Cuadro3 Cuadro4 Cuadro5 Cuadro6 Cuadro7 Cuadro8";
+      grid-template-columns: 190px 190px 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila1 .Cuadro {
+        grid-area: Cuadro;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro2 {
+        grid-area: Cuadro2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro3 {
+        grid-area: Cuadro3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro4 {
+        grid-area: Cuadro4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro5 {
+        grid-area: Cuadro5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro6 {
+        grid-area: Cuadro6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-Cuadro6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro7 {
+        grid-area: Cuadro7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro8 {
+        grid-area: Cuadro8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada {
+      grid-area: nada;
+      background-color: #858585; }
+    .main .FilaSup2 {
+      grid-area: FilaSup2;
+      background-color: #858585; }
+      .main .FilaSup2 .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila2 {
+      grid-area: Fila2;
+      background-color: #858585;
+      display: grid;
+      grid-template-areas: " Cuadro2-1 Cuadro2-2 Cuadro2-3 Cuadro2-4 Cuadro2-5 Cuadro2-6 Cuadro2-7 Cuadro2-8";
+      grid-template-columns: 190px 190px
+ 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila2 .Cuadro2-1 {
+        grid-area: Cuadro2-1;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-2 {
+        grid-area: Cuadro2-2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-3 {
+        grid-area: Cuadro2-3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-4 {
+        grid-area: Cuadro2-4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-5 {
+        grid-area: Cuadro2-5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-6 {
+        grid-area: Cuadro2-6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-7 {
+        grid-area: Cuadro2-7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-8 {
+        grid-area: Cuadro2-8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada2 {
+      grid-area: nada2;
+      background-color: #858585; }
+    .main .FilaSup3 {
+      grid-area: FilaSup3;
+      background-color: #858585; }
+      .main .FilaSup3 .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila3 {
+      grid-area: Fila3;
+      display: grid;
+      background-color: #858585;
+      grid-template-areas: " Cuadro3-1 Cuadro3-2 Cuadro3-3 Cuadro3-4 Cuadro3-5 Cuadro3-6 Cuadro3-7 Cuadro3-8";
+      grid-template-columns: 190px 190px
+ 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila3 .Cuadro3-1 {
+        grid-area: Cuadro3-1;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-2 {
+        grid-area: Cuadro3-2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-3 {
+        grid-area: Cuadro3-3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-4 {
+        grid-area: Cuadro3-4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-5 {
+        grid-area: Cuadro3-5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-6 {
+        grid-area: Cuadro3-6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-7 {
+        grid-area: Cuadro3-7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-8 {
+        grid-area: Cuadro3-8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada3 {
+      grid-area: nada3;
+      background-color: #858585; }
+    .main .Fila4 {
+      grid-area: Fila4;
+      background-color: #3b3b3b; }
+    .main .Fila5 {
+      grid-area: Fila5;
+      background-color: #5f5f5f; } }
+
+/* ⭕Final de Main PC⭕  */
+/* ⭕Inicio de Main Mobile⭕  */
+@media screen and (max-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-areas: " FilaSup" 
+ " Fila1"
+ " nada"
+  " FilaSup2" 
+ " Fila2"
+ " nada2"
+  " FilaSup3" 
+ " Fila3"
+ " nada3"
+  " Fila4"
+ " FilaMscMobile"
+ " Fila5";
+    grid-template-rows: 40px 200px 20px 40px 200px 20px 40px 200px 20px 200px 150px 500px;
+    overflow-y: scroll;
+    /* -------🔵Fila1🔵------- */
+    /* -------🔵Fila1🔵------- */
+    /* -------🔵Fila2🔵------- */
+    /* -------🔵Fila2🔵------- */
+    /* -------🔵Fila3🔵------- */
+    /* -------🔵Fila3🔵------- */
+    /* -------🔵Fila4🔵------- */
+    /* -------🔵Fila4🔵------- */
+    /* -------🔵FilaMscMobile🔵------- */
+    /* -------🔵FilaMscMobile🔵------- */
+    /* -------🔵Fila5🔵------- */
+    /* -------🔵Fila5🔵------- */ }
+    .main .FilaSup {
+      grid-area: FilaSup;
+      background-color: #858585; }
+      .main .FilaSup .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila1 {
+      grid-area: Fila1;
+      background-color: #858585;
+      display: grid;
+      grid-template-areas: " Cuadro Cuadro2 Cuadro3 Cuadro4 Cuadro5 Cuadro6 Cuadro7 Cuadro8";
+      grid-template-columns: 190px 190px
+ 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila1 .Cuadro {
+        grid-area: Cuadro;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro2 {
+        grid-area: Cuadro2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro3 {
+        grid-area: Cuadro3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro4 {
+        grid-area: Cuadro4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro5 {
+        grid-area: Cuadro5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro6 {
+        grid-area: Cuadro6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-Cuadro6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro7 {
+        grid-area: Cuadro7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila1 .Cuadro8 {
+        grid-area: Cuadro8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada {
+      grid-area: nada;
+      background-color: #858585; }
+    .main .FilaSup2 {
+      grid-area: FilaSup2;
+      background-color: #858585; }
+      .main .FilaSup2 .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila2 {
+      grid-area: Fila2;
+      background-color: #858585;
+      display: grid;
+      grid-template-areas: " Cuadro2-1 Cuadro2-2 Cuadro2-3 Cuadro2-4 Cuadro2-5 Cuadro2-6 Cuadro2-7 Cuadro2-8";
+      grid-template-columns: 190px 190px
+ 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila2 .Cuadro2-1 {
+        grid-area: Cuadro2-1;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-2 {
+        grid-area: Cuadro2-2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-3 {
+        grid-area: Cuadro2-3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-4 {
+        grid-area: Cuadro2-4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-5 {
+        grid-area: Cuadro2-5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-6 {
+        grid-area: Cuadro2-6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-7 {
+        grid-area: Cuadro2-7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila2 .Cuadro2-8 {
+        grid-area: Cuadro2-8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada2 {
+      grid-area: nada2;
+      background-color: #858585; }
+    .main .FilaSup3 {
+      grid-area: FilaSup3;
+      background-color: #858585; }
+      .main .FilaSup3 .TituloSec {
+        margin-left: 5px;
+        font-family: "fuenteP"; }
+    .main .Fila3 {
+      grid-area: Fila3;
+      display: grid;
+      background-color: #858585;
+      grid-template-areas: " Cuadro3-1 Cuadro3-2 Cuadro3-3 Cuadro3-4 Cuadro3-5 Cuadro3-6 Cuadro3-7 Cuadro3-8";
+      grid-template-columns: 190px 190px
+ 190px 190px 190px 190px 190px 190px;
+      overflow-x: scroll;
+      grid-column-gap: 20px; }
+      .main .Fila3 .Cuadro3-1 {
+        grid-area: Cuadro3-1;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-2 {
+        grid-area: Cuadro3-2;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-3 {
+        grid-area: Cuadro3-3;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-4 {
+        grid-area: Cuadro3-4;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-5 {
+        grid-area: Cuadro3-5;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-6 {
+        grid-area: Cuadro3-6;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-7 {
+        grid-area: Cuadro3-7;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .main .Fila3 .Cuadro3-8 {
+        grid-area: Cuadro3-8;
+        background-color: #00b7ff;
+        background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .main .nada3 {
+      grid-area: nada3;
+      background-color: #858585; }
+    .main .Fila4 {
+      grid-area: Fila4;
+      background-color: #3b3b3b; }
+    .main .FilaMscMobile {
+      grid-area: FilaMscMobile;
+      background-image: linear-gradient(rgba(255, 0, 0, 0) 40%, rgba(247, 0, 255, 0.288));
+      background-color: #3b3b3b; }
+    .main .Fila5 {
+      grid-area: Fila5;
+      background-color: #5f5f5f; } }
+
+/* ⭕Final de Main PC⭕  */
+@media screen and (min-width: 1200px) {
+  /*--------🌐Mixins🌐--------*/
+  /*--------🌐Mixins🌐--------*/
+  /* -------🔵Fila4🔵------- */
+  .Fila4 {
+    display: grid;
+    grid-template-areas: "space1 SelectMsc space2";
+    grid-template-columns: 50px 320px 1fr; }
+    .Fila4 .space1 {
+      grid-area: space1;
+      background-color: #4e4e4e;
+      background-image: linear-gradient(rgba(255, 0, 0, 0) 70%, rgba(247, 0, 255, 0.288)); }
+    .Fila4 .SelectMsc {
+      grid-area: SelectMsc;
+      background-color: #4e4e4e;
+      background-image: linear-gradient(rgba(255, 0, 0, 0) 70%, rgba(247, 0, 255, 0.288)); }
+      .Fila4 .SelectMsc .imgFila4 {
+        height: 260px;
+        width: 260px;
+        position: relative;
+        left: 27px;
+        top: 17px;
+        border-radius: 50px;
+        background-image: url("../Imagenes/Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .Fila4 .space2 {
+      grid-area: space2;
+      background-color: #4e4e4e;
+      background-image: linear-gradient(rgba(255, 0, 0, 0) 70%, rgba(247, 0, 255, 0.288)); }
+      .Fila4 .space2 .TextMsc {
+        font-size: 100px;
+        margin-top: 80px;
+        margin-left: 50px;
+        font-family: "fuenteMarshmello";
+        color: white;
+        -webkit-text-stroke: 1.5px black; }
+      .Fila4 .space2 .TextMsc2 {
+        font-size: 40px;
+        margin-top: 45px;
+        margin-left: 50px;
+        font-family: "fuenteP";
+        color: white;
+        -webkit-text-stroke: 2.7px black; }
+  /* -------🔵Fila4🔵------- */
+  /* -------🔵FilaMscMobile🔵------- */
+  .FilaMscMobile {
+    display: none; }
+    .FilaMscMobile .TextMscMobile {
+      display: none; }
+    .FilaMscMobile .TextMsc2Mobile {
+      display: none; }
+  /* -------🔵FilaMscMobile🔵------- */
+  /* -------🔵Fila5🔵------- */
+  .Fila5 {
+    display: grid;
+    grid-template-areas: " SubFilaPlay"
+ " FilaAlbum"
+ " SubFila2"
+ " SubFila3"
+ " SubFila4"
+ " SubFila5"
+ " SubFila6";
+    grid-template-rows: 100px 50px 90px 90px 90px 90px 90px;
+    /* ---------🔘SubFila2🔘--------- */
+    /* ---------🔘SubFila2🔘--------- */
+    /* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🔘SubFila3🔘--------- */
+    /* ---------🔘SubFila3🔘--------- */
+    /* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🔘SubFila4🔘--------- */
+    /* ---------🔘SubFila4🔘--------- */
+    /* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🔘SubFila5🔘--------- */
+    /* ---------🔘SubFila5🔘--------- */
+    /* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🔘SubFila6🔘--------- */
+    /* ---------🔘SubFila6🔘--------- */
+    /* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+    /* -------🔵Fila5🔵------- */ }
+    .Fila5 .SubFilaPlay {
+      grid-area: SubFilaPlay;
+      background-color: red; }
+      .Fila5 .SubFilaPlay .TextMscMobile {
+        display: none; }
+      .Fila5 .SubFilaPlay .TextMsc2Mobile {
+        display: none; }
+    .Fila5 .SubFilaPlay {
+      display: grid;
+      grid-template-areas: " FilaIcon1 FilaIcon2 FilaIcon3";
+      grid-template-rows: 100px 100px; }
+      .Fila5 .SubFilaPlay .FilaIcon1 {
+        grid-area: FilaIcon1;
+        background-color: #969696; }
+        .Fila5 .SubFilaPlay .FilaIcon1 .Play {
+          width: 60px;
+          height: 60px;
+          position: relative;
+          left: 240px;
+          top: 20px;
+          background-image: url("../Imagenes/PlayIcon-black.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .Fila5 .SubFilaPlay .FilaIcon1 .Play:hover {
+          width: 60px;
+          height: 60px;
+          position: relative;
+          left: 240px;
+          top: 20px;
+          background-image: url("../Imagenes/play-icon-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFilaPlay .FilaIcon2 {
+        grid-area: FilaIcon2;
+        background-color: #707070; }
+        .Fila5 .SubFilaPlay .FilaIcon2 .Options {
+          width: 70px;
+          height: 70px;
+          position: relative;
+          left: 240px;
+          top: 15px;
+          background-image: url("../Imagenes/dot-icon-black.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .Fila5 .SubFilaPlay .FilaIcon2 .Options:hover {
+          width: 70px;
+          height: 70px;
+          position: relative;
+          left: 240px;
+          top: 15px;
+          background-image: url("../Imagenes/dot-icon-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFilaPlay .FilaIcon3 {
+        grid-area: FilaIcon3;
+        background-color: #969696; }
+        .Fila5 .SubFilaPlay .FilaIcon3 .ListMusic {
+          width: 70px;
+          height: 70px;
+          position: relative;
+          left: 240px;
+          top: 15px;
+          background-image: url("../Imagenes/list-music-black.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .Fila5 .SubFilaPlay .FilaIcon3 .ListMusic:hover {
+          width: 70px;
+          height: 70px;
+          position: relative;
+          left: 240px;
+          top: 15px;
+          background-image: url("../Imagenes/list-music-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFilaPlay .FilaIcon4 {
+        grid-area: FilaIcon4;
+        background-color: #616060; }
+    .Fila5 .FilaAlbum {
+      grid-area: FilaAlbum;
+      background-color: #3a3a3a; }
+      .Fila5 .FilaAlbum .TextAlbum {
+        margin-bottom: 3px;
+        margin-left: 5px;
+        font-size: 40px;
+        font-family: "fuenteP";
+        color: white;
+        -webkit-text-stroke: 2.7px black; }
+    .Fila5 .SubFila2 {
+      grid-area: SubFila2;
+      display: grid;
+      grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila2 .seccionSBF1-1 {
+        grid-area: seccionSBF1-1;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila2 .seccionSBF1-1 .numSub {
+          position: relative;
+          top: 25px;
+          left: 15px;
+          font-family: "fuenteP";
+          color: white; }
+        .Fila5 .SubFila2 .seccionSBF1-1 .CuadroMsc1 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila2 .seccionSBF1-2 {
+        grid-area: seccionSBF1-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila2 .seccionSBF1-2 .TextSongs {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          font-family: "fuenteP";
+          color: white; }
+    .Fila5 .SubFila2:hover {
+      grid-area: SubFila2;
+      display: grid;
+      grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila2:hover .seccionSBF1-1 {
+        grid-area: seccionSBF1-1;
+        background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila2:hover .seccionSBF1-1 .numSub {
+          position: relative;
+          top: 25px;
+          left: 15px; }
+        .Fila5 .SubFila2:hover .seccionSBF1-1 .CuadroMsc1 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila2:hover .seccionSBF1-2 {
+        grid-area: seccionSBF1-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila2:hover .seccionSBF1-2 .TextSongs {
+          font-size: 30px;
+          position: relative;
+          top: 20px; }
+    .Fila5 .SubFila3 {
+      grid-area: SubFila3;
+      display: grid;
+      grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila3 .seccionSBF2-1 {
+        grid-area: seccionSBF2-1;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila3 .seccionSBF2-1 .numSub2 {
+          position: relative;
+          top: 25px;
+          left: 15px;
+          font-family: "fuenteP";
+          color: white; }
+        .Fila5 .SubFila3 .seccionSBF2-1 .CuadroMsc2 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila3 .seccionSBF2-2 {
+        grid-area: seccionSBF2-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila3 .seccionSBF2-2 .TextSongs2 {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          font-family: "fuenteP";
+          color: white; }
+    .Fila5 .SubFila3:hover {
+      grid-area: SubFila3;
+      display: grid;
+      grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila3:hover .seccionSBF2-1 {
+        grid-area: seccionSBF2-1;
+        background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila3:hover .seccionSBF2-1 .numSub2 {
+          position: relative;
+          top: 25px;
+          left: 15px; }
+        .Fila5 .SubFila3:hover .seccionSBF2-1 .CuadroMsc2 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila3:hover .seccionSBF2-2 {
+        grid-area: seccionSBF2-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila3:hover .seccionSBF2-2 .TextSongs2 {
+          font-size: 30px;
+          position: relative;
+          top: 20px; }
+    .Fila5 .SubFila4 {
+      grid-area: SubFila4;
+      display: grid;
+      grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila4 .seccionSBF3-1 {
+        grid-area: seccionSBF3-1;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila4 .seccionSBF3-1 .numSub3 {
+          position: relative;
+          top: 25px;
+          left: 15px;
+          font-family: "fuenteP";
+          color: white; }
+        .Fila5 .SubFila4 .seccionSBF3-1 .CuadroMsc3 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila4 .seccionSBF3-2 {
+        grid-area: seccionSBF3-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila4 .seccionSBF3-2 .TextSongs3 {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          font-family: "fuenteP";
+          color: white; }
+    .Fila5 .SubFila4:hover {
+      grid-area: SubFila4;
+      display: grid;
+      grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila4:hover .seccionSBF3-1 {
+        grid-area: seccionSBF3-1;
+        background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila4:hover .seccionSBF3-1 .numSub3 {
+          position: relative;
+          top: 25px;
+          left: 15px; }
+        .Fila5 .SubFila4:hover .seccionSBF3-1 .CuadroMsc3 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila4:hover .seccionSBF3-2 {
+        grid-area: seccionSBF3-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila4:hover .seccionSBF3-2 .TextSongs3 {
+          font-size: 30px;
+          position: relative;
+          top: 20px; }
+    .Fila5 .SubFila5 {
+      grid-area: SubFila5;
+      display: grid;
+      grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila5 .seccionSBF4-1 {
+        grid-area: seccionSBF4-1;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila5 .seccionSBF4-1 .numSub4 {
+          position: relative;
+          top: 25px;
+          left: 15px;
+          font-family: "fuenteP";
+          color: white; }
+        .Fila5 .SubFila5 .seccionSBF4-1 .CuadroMsc4 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila5 .seccionSBF4-2 {
+        grid-area: seccionSBF4-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila5 .seccionSBF4-2 .TextSongs4 {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          font-family: "fuenteP";
+          color: white; }
+    .Fila5 .SubFila5:hover {
+      grid-area: SubFila5;
+      display: grid;
+      grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila5:hover .seccionSBF4-1 {
+        grid-area: seccionSBF4-1;
+        background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila5:hover .seccionSBF4-1 .numSub4 {
+          position: relative;
+          top: 25px;
+          left: 15px; }
+        .Fila5 .SubFila5:hover .seccionSBF4-1 .CuadroMsc4 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila5:hover .seccionSBF4-2 {
+        grid-area: seccionSBF4-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila5:hover .seccionSBF4-2 .TextSongs4 {
+          font-size: 30px;
+          position: relative;
+          top: 20px; }
+    .Fila5 .SubFila6 {
+      grid-area: SubFila6;
+      display: grid;
+      grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila6 .seccionSBF5-1 {
+        grid-area: seccionSBF5-1;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila6 .seccionSBF5-1 .numSub5 {
+          position: relative;
+          top: 25px;
+          left: 15px;
+          font-family: "fuenteP";
+          color: white; }
+        .Fila5 .SubFila6 .seccionSBF5-1 .CuadroMsc5 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila6 .seccionSBF5-2 {
+        grid-area: seccionSBF5-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila6 .seccionSBF5-2 .TextSongs5 {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          font-family: "fuenteP";
+          color: white; }
+    .Fila5 .SubFila6:hover {
+      grid-area: SubFila6;
+      display: grid;
+      grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+      grid-template-columns: 170px 1fr; }
+      .Fila5 .SubFila6:hover .seccionSBF5-1 {
+        grid-area: seccionSBF5-1;
+        background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila6:hover .seccionSBF5-1 .numSub5 {
+          position: relative;
+          top: 25px;
+          left: 15px; }
+        .Fila5 .SubFila6:hover .seccionSBF5-1 .CuadroMsc5 {
+          height: 60px;
+          width: 60px;
+          background-color: red;
+          position: relative;
+          bottom: 16px;
+          left: 55px;
+          background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+      .Fila5 .SubFila6:hover .seccionSBF5-2 {
+        grid-area: seccionSBF5-2;
+        background-color: #3b3b3b; }
+        .Fila5 .SubFila6:hover .seccionSBF5-2 .TextSongs5 {
+          font-size: 30px;
+          position: relative;
+          top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  /*--------🌐Mixins🌐--------*/
+  /*--------🌐Mixins🌐--------*/
+  /* -------🔵Fila4🔵------- */
+  .Fila4 {
+    display: grid;
+    grid-template-areas: "space1 SelectMsc space2";
+    grid-template-columns: 1fr 200px 1fr; }
+    .Fila4 .space1 {
+      grid-area: space1;
+      background-color: #4e4e4e; }
+    .Fila4 .SelectMsc {
+      grid-area: SelectMsc;
+      background-color: #4e4e4e;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+      .Fila4 .SelectMsc .imgFila4 {
+        height: 200px;
+        width: 200px;
+        background-image: url("../Imagenes/Marshmello.jpg");
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .Fila4 .space2 {
+      grid-area: space2;
+      background-color: #4e4e4e; }
+      .Fila4 .space2 .TextMsc {
+        display: none; }
+      .Fila4 .space2 .TextMsc2 {
+        display: none; }
+  /* -------🔵Fila4🔵------- */
+  /* -------🔵FilaMscMobile🔵------- */
+  .FilaMscMobile .TextMscMobile {
+    font-size: 65px;
+    text-align: center;
+    font-family: "fuenteMarshmello";
+    color: white;
+    -webkit-text-stroke: 2px black; }
+  .FilaMscMobile .TextMsc2Mobile {
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "fuenteP";
+    color: white;
+    -webkit-text-stroke: 2.9px black; }
+  /* -------🔵FilaMscMobile🔵------- */
+  /* -------🔵Fila5🔵------- */
+  .Fila5 {
+    display: grid;
+    grid-template-areas: " SubFilaPlay"
+ " FilaAlbum"
+ " SubFila2"
+ " SubFila3"
+ " SubFila4"
+ " SubFila5"
+ " SubFila6";
+    grid-template-rows: 130px 50px 90px 90px 90px 90px 70px; }
+    .Fila5 .SubFilaPlay {
+      grid-area: SubFilaPlay;
+      background-color: red;
+      display: grid;
+      grid-template-areas: " FilaIcon1 FilaIcon2 FilaIcon3";
+      grid-template-rows: 150px 150px 150px; }
+      .Fila5 .SubFilaPlay .FilaIcon1 {
+        grid-area: FilaIcon1;
+        background-color: #969696; }
+        .Fila5 .SubFilaPlay .FilaIcon1 .Play {
+          width: 65px;
+          height: 65px;
+          background-image: url("../Imagenes/PlayIcon-black.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 33px;
+          top: 35px; }
+        .Fila5 .SubFilaPlay .FilaIcon1 .Play:hover {
+          width: 65px;
+          height: 65px;
+          background-image: url("../Imagenes/play-icon-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 33px;
+          top: 35px; }
+      .Fila5 .SubFilaPlay .FilaIcon2 {
+        grid-area: FilaIcon2;
+        background-color: #707070; }
+        .Fila5 .SubFilaPlay .FilaIcon2 .Options {
+          width: 80px;
+          height: 80px;
+          background-image: url("../Imagenes/dot-icon-black.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 28px;
+          top: 25px; }
+        .Fila5 .SubFilaPlay .FilaIcon2 .Options:hover {
+          width: 80px;
+          height: 80px;
+          background-image: url("../Imagenes/dot-icon-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 28px;
+          top: 25px; }
+      .Fila5 .SubFilaPlay .FilaIcon3 {
+        grid-area: FilaIcon3;
+        background-color: #969696; }
+        .Fila5 .SubFilaPlay .FilaIcon3 .ListMusic {
+          width: 80px;
+          height: 80px;
+          background-image: url("../Imagenes/list-music-black.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 28px;
+          top: 25px; }
+        .Fila5 .SubFilaPlay .FilaIcon3 .ListMusic:hover {
+          width: 80px;
+          height: 80px;
+          background-image: url("../Imagenes/list-music-white.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          left: 28px;
+          top: 25px; }
+      .Fila5 .SubFilaPlay .Titulocancion {
+        grid-area: Titulocancion;
+        background-color: #0051ff; }
+        .Fila5 .SubFilaPlay .Titulocancion .TextMscMobile {
+          font-size: 60px;
+          text-align: center; }
+        .Fila5 .SubFilaPlay .Titulocancion .TextMsc2Mobile {
+          font-size: 30px;
+          text-align: center; }
+  .FilaAlbum {
+    grid-area: FilaAlbum;
+    background-color: #3a3a3a; }
+    .FilaAlbum .TextAlbum {
+      font-size: 40px;
+      margin-bottom: 3px;
+      margin-left: 5px;
+      font-family: "fuenteP";
+      color: white;
+      -webkit-text-stroke: 2.7px black; }
+  /* ---------🔘SubFila2🔘--------- */
+  .SubFila2 {
+    grid-area: SubFila2;
+    display: grid;
+    grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila2 .seccionSBF1-1 {
+      grid-area: seccionSBF1-1;
+      background-color: #3b3b3b; }
+      .SubFila2 .seccionSBF1-1 .numSub {
+        position: relative;
+        top: 25px;
+        left: 15px;
+        font-family: "fuenteP";
+        color: white; }
+      .SubFila2 .seccionSBF1-1 .CuadroMsc1 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila2 .seccionSBF1-2 {
+      grid-area: seccionSBF1-2;
+      background-color: #3b3b3b; }
+    .SubFila2 .TextSongs {
+      font-size: 20px;
+      position: relative;
+      top: 26px;
+      font-family: "fuenteP";
+      color: white; }
+  /* ---------🔘SubFila2🔘--------- */
+  /* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  .SubFila2:hover {
+    grid-area: SubFila2;
+    display: grid;
+    grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila2:hover .seccionSBF1-1 {
+      grid-area: seccionSBF1-1;
+      background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%); }
+      .SubFila2:hover .seccionSBF1-1 .numSub {
+        position: relative;
+        top: 25px;
+        left: 15px; }
+      .SubFila2:hover .seccionSBF1-1 .CuadroMsc1 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila2:hover .seccionSBF1-2 {
+      grid-area: seccionSBF1-2;
+      background-color: #3b3b3b; }
+    .SubFila2:hover .TextSongs {
+      font-size: 20px;
+      position: relative;
+      top: 26px; }
+  /* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  /* ---------🔘SubFila3🔘--------- */
+  .SubFila3 {
+    grid-area: SubFila3;
+    display: grid;
+    grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila3 .seccionSBF2-1 {
+      grid-area: seccionSBF2-1;
+      background-color: #3b3b3b; }
+      .SubFila3 .seccionSBF2-1 .numSub2 {
+        position: relative;
+        top: 25px;
+        left: 15px;
+        font-family: "fuenteP";
+        color: white; }
+      .SubFila3 .seccionSBF2-1 .CuadroMsc2 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila3 .seccionSBF2-2 {
+      grid-area: seccionSBF2-2;
+      background-color: #3b3b3b; }
+    .SubFila3 .TextSongs2 {
+      font-size: 20px;
+      position: relative;
+      top: 26px;
+      font-family: "fuenteP";
+      color: white; }
+  /* ---------🔘SubFila3🔘--------- */
+  /* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  .SubFila3:hover {
+    grid-area: SubFila3;
+    display: grid;
+    grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila3:hover .seccionSBF2-1 {
+      grid-area: seccionSBF2-1;
+      background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+      background-color: #3b3b3b; }
+      .SubFila3:hover .seccionSBF2-1 .numSub2 {
+        position: relative;
+        top: 25px;
+        left: 15px; }
+      .SubFila3:hover .seccionSBF2-1 .CuadroMsc2 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila3:hover .seccionSBF2-2 {
+      grid-area: seccionSBF2-2;
+      background-color: #3b3b3b; }
+    .SubFila3:hover .TextSongs2 {
+      font-size: 20px;
+      position: relative;
+      top: 26px; }
+  /* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  /* ---------🔘SubFila4🔘--------- */
+  .SubFila4 {
+    grid-area: SubFila4;
+    display: grid;
+    grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila4 .seccionSBF3-1 {
+      grid-area: seccionSBF3-1;
+      background-color: #3b3b3b; }
+      .SubFila4 .seccionSBF3-1 .numSub3 {
+        position: relative;
+        top: 25px;
+        left: 15px;
+        font-family: "fuenteP";
+        color: white; }
+      .SubFila4 .seccionSBF3-1 .CuadroMsc3 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila4 .seccionSBF3-2 {
+      grid-area: seccionSBF3-2;
+      background-color: #3b3b3b; }
+    .SubFila4 .TextSongs3 {
+      font-size: 20px;
+      position: relative;
+      top: 26px;
+      font-family: "fuenteP";
+      color: white; }
+  /* ---------🔘SubFila4🔘--------- */
+  /* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  .SubFila4:hover {
+    grid-area: SubFila4;
+    display: grid;
+    grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila4:hover .seccionSBF3-1 {
+      grid-area: seccionSBF3-1;
+      background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+      background-color: #3b3b3b; }
+      .SubFila4:hover .seccionSBF3-1 .numSub3 {
+        position: relative;
+        top: 25px;
+        left: 15px; }
+      .SubFila4:hover .seccionSBF3-1 .CuadroMsc3 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila4:hover .seccionSBF3-2 {
+      grid-area: seccionSBF3-2;
+      background-color: #3b3b3b; }
+    .SubFila4:hover .TextSongs3 {
+      font-size: 20px;
+      position: relative;
+      top: 26px; }
+  /* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  /* ---------🔘SubFila5🔘--------- */
+  .SubFila5 {
+    grid-area: SubFila5;
+    display: grid;
+    grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila5 .seccionSBF4-1 {
+      grid-area: seccionSBF4-1;
+      background-color: #3b3b3b; }
+      .SubFila5 .seccionSBF4-1 .numSub4 {
+        position: relative;
+        top: 25px;
+        left: 15px;
+        font-family: "fuenteP";
+        color: white; }
+      .SubFila5 .seccionSBF4-1 .CuadroMsc4 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila5 .seccionSBF4-2 {
+      grid-area: seccionSBF4-2;
+      background-color: #3b3b3b; }
+    .SubFila5 .TextSongs4 {
+      font-size: 20px;
+      position: relative;
+      top: 26px;
+      font-family: "fuenteP";
+      color: white; }
+  /* ---------🔘SubFila5🔘--------- */
+  /* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  .SubFila5:hover {
+    grid-area: SubFila5;
+    display: grid;
+    grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila5:hover .seccionSBF4-1 {
+      grid-area: seccionSBF4-1;
+      background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+      background-color: #3b3b3b; }
+      .SubFila5:hover .seccionSBF4-1 .numSub4 {
+        position: relative;
+        top: 25px;
+        left: 15px; }
+      .SubFila5:hover .seccionSBF4-1 .CuadroMsc4 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila5:hover .seccionSBF4-2 {
+      grid-area: seccionSBF4-2;
+      background-color: #3b3b3b; }
+    .SubFila5:hover .TextSongs4 {
+      font-size: 20px;
+      position: relative;
+      top: 26px; }
+  /* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  /* ---------🔘SubFila6🔘--------- */
+  .SubFila6 {
+    grid-area: SubFila6;
+    display: grid;
+    grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila6 .seccionSBF5-1 {
+      grid-area: seccionSBF5-1;
+      background-color: #3b3b3b; }
+      .SubFila6 .seccionSBF5-1 .numSub5 {
+        position: relative;
+        top: 25px;
+        left: 15px;
+        font-family: "fuenteP";
+        color: white; }
+      .SubFila6 .seccionSBF5-1 .CuadroMsc5 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila6 .seccionSBF5-2 {
+      grid-area: seccionSBF5-2;
+      background-color: #3b3b3b; }
+    .SubFila6 .TextSongs5 {
+      font-size: 20px;
+      position: relative;
+      top: 26px;
+      font-family: "fuenteP";
+      color: white; }
+  /* ---------🔘SubFila6🔘--------- */
+  /* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  .SubFila6:hover {
+    grid-area: SubFila6;
+    display: grid;
+    grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+    grid-template-columns: 120px 1fr; }
+    .SubFila6:hover .seccionSBF5-1 {
+      grid-area: seccionSBF5-1;
+      background-image: linear-gradient(to left, #3b3b3b, rgba(102, 255, 0, 0.747) 90%);
+      background-color: #3b3b3b; }
+      .SubFila6:hover .seccionSBF5-1 .numSub5 {
+        position: relative;
+        top: 25px;
+        left: 15px; }
+      .SubFila6:hover .seccionSBF5-1 .CuadroMsc5 {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+        background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+    .SubFila6:hover .seccionSBF5-2 {
+      grid-area: seccionSBF5-2;
+      background-color: #3b3b3b; }
+    .SubFila6:hover .TextSongs5 {
+      font-size: 20px;
+      position: relative;
+      top: 26px; }
+  /* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+  /* -------🔵Fila5🔵------- */ }
