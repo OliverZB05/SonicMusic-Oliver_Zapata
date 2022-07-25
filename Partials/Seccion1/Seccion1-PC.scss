@@ -1,0 +1,352 @@
+/* ⭕Inicio de Main PC⭕  */
+@media screen and (min-width: 1200px) {
+.main{
+    display: grid;
+    grid-template-areas:
+    " FilaSup" 
+    " Fila1"
+    " nada"
+
+    " FilaSup2" 
+    " Fila2"
+    " nada2"
+
+    " FilaSup3" 
+    " Fila3"
+    " nada3"
+
+	" Fila4"
+	" Fila5";
+    grid-template-rows:40px 200px 20px 40px 200px 20px 40px 200px 20px 300px 500px; 
+    overflow-y: scroll;
+	overflow-x: hidden;
+
+   .FilaSup{
+    grid-area: FilaSup;
+    background-color: $colorFilas;
+
+	.TituloSec{
+		margin-left: 5px;
+		font-family: "fuenteP";
+	}
+}
+
+/* -------🔵Fila1🔵------- */
+   .Fila1{
+    grid-area: Fila1;
+    background-color: $colorFilas;
+    display: grid;
+    grid-template-areas:
+	" Cuadro Cuadro2 Cuadro3 Cuadro4 Cuadro5 Cuadro6 Cuadro7 Cuadro8";
+    grid-template-columns: 190px 190px 190px 190px 190px 190px 190px 190px; 
+	overflow-x: scroll;
+	grid-column-gap: 20px;
+
+        .Cuadro{
+		grid-area: Cuadro;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+
+	    .Cuadro2{
+		grid-area: Cuadro2;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3{
+		grid-area: Cuadro3;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro4{
+		grid-area: Cuadro4;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro4.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro5{
+		grid-area: Cuadro5;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro5.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro6{
+		grid-area: Cuadro6;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-Cuadro6.png");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro7{
+		grid-area: Cuadro7;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro7.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro8{
+		grid-area: Cuadro8;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro8.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+}
+/* -------🔵Fila1🔵------- */
+
+
+   .nada{
+    grid-area: nada;
+    background-color: $colorNada;
+   }
+
+   .FilaSup2{
+    grid-area: FilaSup2;
+    background-color: $colorFilas;
+
+	.TituloSec{
+		margin-left: 5px;
+		font-family: "fuenteP";
+	}
+   }
+
+
+/* -------🔵Fila2🔵------- */
+   .Fila2{
+    grid-area: Fila2;
+    background-color: $colorFilas;
+    display: grid;
+	grid-template-areas:
+	" Cuadro2-1 Cuadro2-2 Cuadro2-3 Cuadro2-4 Cuadro2-5 Cuadro2-6 Cuadro2-7 Cuadro2-8";
+	grid-template-columns: 190px 190px
+	190px 190px 190px 190px 190px 190px; 
+	overflow-x: scroll;
+	grid-column-gap: 20px;
+
+        .Cuadro2-1{
+		grid-area: Cuadro2-1;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-1.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+
+	    .Cuadro2-2{
+		grid-area: Cuadro2-2;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-2.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro2-3{
+		grid-area: Cuadro2-3;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-3.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+		}
+
+	    .Cuadro2-4{
+		grid-area: Cuadro2-4;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-4.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro2-5{
+		grid-area: Cuadro2-5;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-5.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro2-6{
+		grid-area: Cuadro2-6;
+		background-color: $colorCuadro;
+		background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-6.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro2-7{
+		grid-area: Cuadro2-7;
+		background-color: $colorCuadro;
+		background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-7.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro2-8{
+		grid-area: Cuadro2-8;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro2-8.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+   }
+/* -------🔵Fila2🔵------- */
+
+
+   .nada2{
+    grid-area: nada2;
+    background-color: $colorNada;
+   }
+
+   .FilaSup3{
+    grid-area: FilaSup3;
+    background-color: $colorFilas;
+
+	.TituloSec{
+		margin-left: 5px;
+		font-family: "fuenteP";
+	}
+   }
+
+
+/* -------🔵Fila3🔵------- */
+   .Fila3{
+    grid-area: Fila3;
+    display: grid;
+    background-color: $colorFilas;
+    grid-template-areas:
+	" Cuadro3-1 Cuadro3-2 Cuadro3-3 Cuadro3-4 Cuadro3-5 Cuadro3-6 Cuadro3-7 Cuadro3-8";
+	grid-template-columns: 190px 190px
+	190px 190px 190px 190px 190px 190px; 
+	overflow-x: scroll;
+	grid-column-gap: 20px;
+
+        .Cuadro3-1{
+		grid-area: Cuadro3-1;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-1.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+
+	    .Cuadro3-2{
+		grid-area: Cuadro3-2;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-2.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-3{
+		grid-area: Cuadro3-3;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-3.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-4{
+		grid-area: Cuadro3-4;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-4.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-5{
+		grid-area: Cuadro3-5;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-5.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-6{
+		grid-area: Cuadro3-6;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-6.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-7{
+		grid-area: Cuadro3-7;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-7.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    }
+
+	    .Cuadro3-8{
+		grid-area: Cuadro3-8;
+		background-color: $colorCuadro;
+	    background-image: url("../Imagenes/Cuadros/Imagen-cuadro3-8.jpg");
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    } 
+   }
+/* -------🔵Fila3🔵------- */
+
+
+
+   .nada3{
+    grid-area: nada3;
+    background-color: $colorNada;
+   }
+
+
+/* -------🔵Fila4🔵------- */
+   .Fila4{
+    grid-area: Fila4;
+	background-color: $colorFila4;
+   }
+/* -------🔵Fila4🔵------- */
+
+
+/* -------🔵Fila5🔵------- */
+.Fila5{
+    grid-area: Fila5;
+	background-color: $colorFila5;
+   }
+/* -------🔵Fila5🔵------- */
+}
+}
+/* ⭕Final de Main PC⭕  */
+
+
+
