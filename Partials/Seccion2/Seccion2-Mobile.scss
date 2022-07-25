@@ -1,0 +1,655 @@
+@media screen and (max-width: 768px) {
+
+/*--------🌐Mixins🌐--------*/
+    @mixin Subfilas{
+        border: solid black 3px;
+        background-color: rgb(0, 102, 255);
+    }
+
+    @mixin CuadrosMobile{
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        position: relative;
+        bottom: 16px;
+        left: 45px;
+    }
+
+    @mixin SubTEXTNUM{
+        font-family: "fuenteP";
+        color: white;
+    }
+/*--------🌐Mixins🌐--------*/
+
+
+/* -------🔵Fila4🔵------- */
+    .Fila4{
+        display: grid;
+        grid-template-areas:
+        "space1 SelectMsc space2";
+        grid-template-columns:1fr 200px 1fr;
+    
+        .space1{
+            grid-area: space1;
+            background-color: $colorSpace;
+        }
+    
+        .SelectMsc{
+            grid-area: SelectMsc;
+            background-color: $colorSpace;
+            background-repeat: no-repeat;
+	        background-size: cover;
+	        background-position: center;
+
+            .imgFila4{
+            height: 200px;
+            width: 200px;
+            background-image: url("../Imagenes/Marshmello.jpg");
+            border-radius: 50px;
+            background-repeat: no-repeat;
+	        background-size: cover;
+	        background-position: center;
+            }
+        }
+    
+        .space2{
+            grid-area: space2;
+            background-color: $colorSpace;
+
+            .TextMsc{
+                display: none;
+            }
+    
+            .TextMsc2{
+                display: none;
+            }
+        }
+    }
+/* -------🔵Fila4🔵------- */
+
+
+/* -------🔵FilaMscMobile🔵------- */
+    .FilaMscMobile{
+
+        .TextMscMobile{
+            font-size: 65px;
+            text-align: center;
+            font-family: "fuenteMarshmello";
+            color: white;
+            -webkit-text-stroke: 2px rgb(0, 0, 0);
+        }
+
+        .TextMsc2Mobile{
+            font-size: 40px;
+            margin-top: 15px;
+            text-align: center;
+            font-family: "fuenteP";
+            color: white;
+            -webkit-text-stroke: 2.9px rgb(0, 0, 0);
+        }
+    }
+/* -------🔵FilaMscMobile🔵------- */
+
+
+/* -------🔵Fila5🔵------- */
+    .Fila5{
+        display: grid;
+        grid-template-areas:
+        " SubFilaPlay"
+        " FilaAlbum"
+        " SubFila2"
+        " SubFila3"
+        " SubFila4"
+        " SubFila5"
+        " SubFila6";
+        grid-template-rows:130px 50px 90px 90px 90px 90px 70px;
+    
+        .SubFilaPlay{
+        grid-area: SubFilaPlay;
+        background-color: red;
+        display: grid;
+        grid-template-areas:
+        " FilaIcon1 FilaIcon2 FilaIcon3";
+        grid-template-rows: 150px 150px 150px;
+
+        .FilaIcon1{
+            grid-area: FilaIcon1;
+            background-color: rgb(150, 150, 150);
+
+            .Play{
+                width: 65px;
+                height: 65px;
+                background-image: url("../Imagenes/PlayIcon-black.png");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft + 5px;
+                top: 35px;
+            }
+
+            .Play:hover{
+                width: 65px;
+                height: 65px;
+                background-image: url("../Imagenes/play-icon-white.png");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft + 5px;
+                top: 35px;
+            }
+        }
+
+        .FilaIcon2{
+            grid-area: FilaIcon2;
+            background-color: rgb(112, 112, 112);
+
+            .Options{
+                width: 80px;
+                height: 80px;
+                background-image: url("../Imagenes/dot-icon-black.jpg");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft;
+                top: 25px;
+            }
+
+            .Options:hover{
+                width: 80px;
+                height: 80px;
+                background-image: url("../Imagenes/dot-icon-white.png");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft;
+                top: 25px;
+            }
+        }
+
+        .FilaIcon3{
+            grid-area: FilaIcon3;
+            background-color: rgb(150, 150, 150);
+
+            .ListMusic{
+                width: 80px;
+                height: 80px;
+                background-image: url("../Imagenes/list-music-black.png");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft;
+                top: 25px;
+            }
+
+            .ListMusic:hover{
+                width: 80px;
+                height: 80px;
+                background-image: url("../Imagenes/list-music-white.png");
+                background-repeat: no-repeat;
+	            background-size: cover;
+	            background-position: center;
+                position: relative;
+                left: $PositionIconLeft;
+                top: 25px;
+            }
+        }
+
+        .Titulocancion{
+            grid-area: Titulocancion;
+            background-color: rgb(0, 81, 255);
+
+            .TextMscMobile{
+                font-size: 60px;
+                text-align: center;
+            }
+
+            .TextMsc2Mobile{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+}
+}
+
+        .FilaAlbum{
+        grid-area: FilaAlbum;
+        background-color: rgb(58, 58, 58);
+
+            .TextAlbum{
+            font-size: 40px;
+            margin-bottom: 3px;
+            margin-left: 5px;
+            font-family: "fuenteP";
+            color: white;
+            -webkit-text-stroke: 2.7px rgb(0, 0, 0);
+            }
+        }
+    
+/* ---------🔘SubFila2🔘--------- */
+        .SubFila2{
+        grid-area: SubFila2;
+        display: grid;
+        grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+        grid-template-columns: 120px 1fr;
+
+    
+            .seccionSBF1-1{
+                grid-area: seccionSBF1-1;
+                background-color: rgb(59, 59, 59);
+
+                .numSub{
+                    position: relative;
+                    top: $numSubTop;
+                    left: $numSubLeft;
+                    @include SubTEXTNUM();
+                }
+
+                .CuadroMsc1{
+                    @include CuadrosMobile();
+                    background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+                    background-repeat: no-repeat;
+	                background-size: cover;
+	                background-position: center;
+                }
+            }
+    
+            .seccionSBF1-2{
+                grid-area: seccionSBF1-2;
+                background-color: rgb(59, 59, 59);
+            }
+
+            .TextSongs{
+                font-size: 20px;
+                position: relative;
+                top: 26px;
+                @include SubTEXTNUM();
+            }
+        } 
+/* ---------🔘SubFila2🔘--------- */
+/* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+.SubFila2:hover{
+    grid-area: SubFila2;
+    display: grid;
+    grid-template-areas: " seccionSBF1-1 seccionSBF1-2";
+    grid-template-columns: 120px 1fr;
+
+
+        .seccionSBF1-1{
+            grid-area: seccionSBF1-1;
+            background-image: linear-gradient(to left, rgb(59, 59, 59), rgba(102, 255, 0, 0.747) 90%);
+
+            .numSub{
+                position: relative;
+                top: $numSubTop;
+                left: $numSubLeft;
+               
+            }
+
+            .CuadroMsc1{
+                @include CuadrosMobile();
+                background-image: url("../Imagenes/TextSongs/Alone-Marshmello.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .seccionSBF1-2{
+            grid-area: seccionSBF1-2;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .TextSongs{
+            font-size: 20px;
+            position: relative;
+            top: 26px;
+           
+        }
+    } 
+/* ---------🛑SubFila2:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+
+    
+/* ---------🔘SubFila3🔘--------- */
+        .SubFila3{
+        grid-area: SubFila3;  
+        display: grid;
+        grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+        grid-template-columns: 120px 1fr;
+    
+            .seccionSBF2-1{
+                grid-area: seccionSBF2-1;
+                background-color: rgb(59, 59, 59);
+
+                .numSub2{
+                    position: relative;
+                    top: $numSubTop;
+                    left: $numSubLeft;
+                    @include SubTEXTNUM();
+                }
+
+                .CuadroMsc2{
+                    @include CuadrosMobile();
+                    background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+                    background-repeat: no-repeat;
+	                background-size: cover;
+	                background-position: center;
+                }
+            }
+    
+            .seccionSBF2-2{
+                grid-area: seccionSBF2-2;
+                background-color: rgb(59, 59, 59);
+            }
+
+            .TextSongs2{
+                font-size: 20px;
+                position: relative;
+                top: 26px;
+                @include SubTEXTNUM();
+            }
+        }
+/* ---------🔘SubFila3🔘--------- */
+/* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+.SubFila3:hover{
+    grid-area: SubFila3;  
+    display: grid;
+    grid-template-areas: " seccionSBF2-1 seccionSBF2-2";
+    grid-template-columns: 120px 1fr;
+
+
+        .seccionSBF2-1{
+            grid-area: seccionSBF2-1;
+            background-image: linear-gradient(to left, rgb(59, 59, 59), rgba(102, 255, 0, 0.747) 90%);
+            background-color: rgb(59, 59, 59);
+
+            .numSub2{
+                position: relative;
+                top: $numSubTop;
+                left: $numSubLeft;
+               
+            }
+
+            .CuadroMsc2{
+                @include CuadrosMobile();
+                background-image: url("../Imagenes/TextSongs/Happier-Marshmello.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .seccionSBF2-2{
+            grid-area: seccionSBF2-2;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .TextSongs2{
+            font-size: 20px;
+            position: relative;
+            top: 26px;
+           
+        }
+    }
+/* ---------🛑SubFila3:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+
+
+/* ---------🔘SubFila4🔘--------- */
+        .SubFila4{
+        grid-area: SubFila4;
+        display: grid;
+        grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+        grid-template-columns: 120px 1fr;
+
+    
+            .seccionSBF3-1{
+                grid-area: seccionSBF3-1;
+                background-color: rgb(59, 59, 59);
+
+                .numSub3{
+                    position: relative;
+                    top: $numSubTop;
+                    left: $numSubLeft;
+                    @include SubTEXTNUM();
+                }
+
+                .CuadroMsc3{
+                    @include CuadrosMobile();
+                    background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+                    background-repeat: no-repeat;
+	                background-size: cover;
+	                background-position: center;
+                }
+            }
+    
+            .seccionSBF3-2{
+                grid-area: seccionSBF3-2;
+                background-color: rgb(59, 59, 59);
+            }
+
+            .TextSongs3{
+                font-size: 20px;
+                position: relative;
+                top: 26px;
+                @include SubTEXTNUM();
+            }   
+        }
+/* ---------🔘SubFila4🔘--------- */
+/* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+.SubFila4:hover{
+    grid-area: SubFila4;
+    display: grid;
+    grid-template-areas: " seccionSBF3-1 seccionSBF3-2";
+    grid-template-columns: 120px 1fr;
+
+
+        .seccionSBF3-1{
+            grid-area: seccionSBF3-1;
+            background-image: linear-gradient(to left, rgb(59, 59, 59), rgba(102, 255, 0, 0.747) 90%);
+            background-color: rgb(59, 59, 59);
+
+            .numSub3{
+                position: relative;
+                top: $numSubTop;
+                left: $numSubLeft;
+               
+            }
+
+            .CuadroMsc3{
+                @include CuadrosMobile();
+                background-image: url("../Imagenes/TextSongs/Friends-Marshmello.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .seccionSBF3-2{
+            grid-area: seccionSBF3-2;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .TextSongs3{
+            font-size: 20px;
+            position: relative;
+            top: 26px;
+           
+        }   
+    }
+/* ---------🛑SubFila4:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+
+
+/* ---------🔘SubFila5🔘--------- */
+        .SubFila5{
+        grid-area: SubFila5;
+        display: grid;
+        grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+        grid-template-columns: 120px 1fr;
+
+    
+            .seccionSBF4-1{
+                grid-area: seccionSBF4-1;
+                background-color: rgb(59, 59, 59);
+
+                .numSub4{
+                    position: relative;
+                    top: $numSubTop;
+                    left: $numSubLeft;
+                    @include SubTEXTNUM();
+                }
+
+                .CuadroMsc4{
+                    @include CuadrosMobile();
+                    background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+                    background-repeat: no-repeat;
+	                background-size: cover;
+	                background-position: center;
+                }
+            }
+    
+            .seccionSBF4-2{
+                grid-area: seccionSBF4-2;
+                background-color: rgb(59, 59, 59);
+            }
+
+            .TextSongs4{
+                font-size: 20px;
+                position: relative;
+                top: 26px;
+                @include SubTEXTNUM();
+            }      
+        }
+/* ---------🔘SubFila5🔘--------- */
+/* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+.SubFila5:hover{
+    grid-area: SubFila5;
+    display: grid;
+    grid-template-areas: " seccionSBF4-1 seccionSBF4-2";
+    grid-template-columns: 120px 1fr;
+
+
+        .seccionSBF4-1{
+            grid-area: seccionSBF4-1;
+            background-image: linear-gradient(to left, rgb(59, 59, 59), rgba(102, 255, 0, 0.747) 90%);
+            background-color: rgb(59, 59, 59);
+
+            .numSub4{
+                position: relative;
+                top: $numSubTop;
+                left: $numSubLeft;
+               
+            }
+
+            .CuadroMsc4{
+                @include CuadrosMobile();
+                background-image: url("../Imagenes/TextSongs/Wolves-Marshmello.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .seccionSBF4-2{
+            grid-area: seccionSBF4-2;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .TextSongs4{
+            font-size: 20px;
+            position: relative;
+            top: 26px;
+           
+        }      
+    }
+/* ---------🛑SubFila5:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+
+
+/* ---------🔘SubFila6🔘--------- */
+        .SubFila6{
+        grid-area: SubFila6;
+        display: grid;
+        grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+        grid-template-columns: 120px 1fr;
+
+    
+            .seccionSBF5-1{
+                grid-area: seccionSBF5-1;
+                background-color: rgb(59, 59, 59);
+
+                .numSub5{
+                    position: relative;
+                    top: $numSubTop;
+                    left: $numSubLeft;
+                    @include SubTEXTNUM();
+                }
+
+                .CuadroMsc5{
+                    @include CuadrosMobile();
+                    background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+                    background-repeat: no-repeat;
+	                background-size: cover;
+	                background-position: center;
+                }
+            }
+    
+            .seccionSBF5-2{
+                grid-area: seccionSBF5-2;
+                background-color: rgb(59, 59, 59);
+            }
+
+            .TextSongs5{
+                font-size: 20px;
+                position: relative;
+                top: 26px;
+                @include SubTEXTNUM();
+            }       
+        }
+/* ---------🔘SubFila6🔘--------- */
+/* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+.SubFila6:hover{
+    grid-area: SubFila6;
+    display: grid;
+    grid-template-areas: " seccionSBF5-1 seccionSBF5-2";
+    grid-template-columns: 120px 1fr;
+
+
+        .seccionSBF5-1{
+            grid-area: seccionSBF5-1;
+            background-image: linear-gradient(to left, rgb(59, 59, 59), rgba(102, 255, 0, 0.747) 90%);
+            background-color: rgb(59, 59, 59);
+
+            .numSub5{
+                position: relative;
+                top: $numSubTop;
+                left: $numSubLeft;
+               
+            }
+
+            .CuadroMsc5{
+                @include CuadrosMobile();
+                background-image: url("../Imagenes/TextSongs/Summer-Marshmello.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .seccionSBF5-2{
+            grid-area: seccionSBF5-2;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .TextSongs5{
+            font-size: 20px;
+            position: relative;
+            top: 26px;
+           
+        }       
+    }
+/* ---------🛑SubFila6:𝐡𝐨𝐯𝐞𝐫🛑--------- */
+/* -------🔵Fila5🔵------- */
+}
