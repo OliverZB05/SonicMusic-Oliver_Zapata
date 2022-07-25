@@ -1,0 +1,89 @@
+/* Inicio del reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Final del reset */
+
+
+/* ✅ Inicio de grid-container ✅  */
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" main main main"
+	" footer footer footer";
+	grid-template-rows: 90px 50px 559px 90px;
+	grid-template-columns: 200px;
+
+header{
+  grid-area: header;
+	background-image: url("../Imagenes/HeaderSonicMusic.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+
+/* Inicio elementos de menú */
+.Enlaces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ElementLi {
+    display: inline;
+    padding: 15px;
+}
+
+.Link{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+	bottom: 1px;
+  font-family: "fuenteLink";
+}
+
+.Link:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(14, 255, 6);
+    /*animacion de derecha a izquierda*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .Link:hover:after {
+    /*animacion de izquierda a derecha*/
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+/* Final elementos de menú */
+
+}
+
+ .main{
+	grid-area: main;
+}
+
+ footer{
+    grid-area: footer; 
+	background-image: url("../Imagenes/FooterSonicMusic.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+}
+/* ✅ Final de grid-container ✅  */
